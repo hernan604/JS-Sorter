@@ -1,0 +1,37 @@
+=head1 JS-Sorter
+
+Sort array of objects
+
+=head3 SYNOPSIS
+
+ var some_data = [
+    {"children":2,"firstname":"cleber","age":2,"lastname":"palazzo"},
+    {"age":59,"lastname":"gonzaga","children":1,"firstname":"danilo"},
+    {"age":24,"lastname":"mota","children":2,"firstname":"mauro"},
+    {"lastname":"palazzo","age":76,"firstname":"luzia","children":1},
+    {"age":21,"lastname":"campos","children":2,"firstname":"daniel"},
+    {"firstname":"gabriel","children":2,"age":76,"lastname":"nunes"},
+    {"age":46,"lastname":"mota","firstname":"ricardo","children":0},
+    {"firstname":"cleber","children":0,"age":3,"lastname":"morato"}
+ ];
+
+ var sorter = new Sorter({});
+ var sort_options = [
+    ['firstname'    , 'asc'],
+    ['lastname'     , 'asc'],
+    ['age'          , 'desc'],
+    ['children'     , 'asc']
+ ];
+ var result = sorter.load( some_data ).sort( sort_options ).data;
+ console.log( result, '<-- sorted array' );
+
+=head2 DESCRIPTION
+
+Javascript lib to sort an array of objects, by column just like an SQL query does.
+This module helps sort multiple columns in a simple way.
+
+L<Example|https://rawgit.com/hernan604/JS-Sorter/master/index.htm>
+
+=head2 AUTHOR
+
+Hernan Lopes
