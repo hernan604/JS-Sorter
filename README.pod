@@ -34,6 +34,15 @@ This module helps sort multiple columns in a simple way.
 
 The following is a sorted array of objects. See the code in L<Example|https://rawgit.com/hernan604/JS-Sorter/master/index.htm>
 
+Order by:
+
+ ['firstname'    , 'asc'],
+ ['lastname'     , 'asc'],
+ ['age'          , 'desc'],
+ ['children'     , 'asc']
+
+Result:
+
  cleber morato 20 2
  cleber morato 3 0
  cleber mota 58 0
