@@ -23,7 +23,8 @@
             }
 
             $.ajax({
-                url : './data.json',
+                url : './data.js',
+                dataType: 'json',
                 success: function ( some_data ) {
                     do_sort( some_data );
                 }
