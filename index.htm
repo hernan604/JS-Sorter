@@ -26,6 +26,7 @@
                 url : './data.json',
                 dataType: 'json',
                 success: function ( some_data ) {
+                    console.log('success', some_data);
                     do_sort( some_data );
                 }
             });
