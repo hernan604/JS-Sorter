@@ -30,7 +30,110 @@ Sort array of objects
 Javascript lib to sort an array of objects, by column just like an SQL query does.
 This module helps sort multiple columns in a simple way.
 
-L<Example|https://rawgit.com/hernan604/JS-Sorter/master/index.htm>
+=head2 EXAMPLE RESULT
+
+The following is a sorted array of objects. See the code in L<Example|https://rawgit.com/hernan604/JS-Sorter/master/index.htm>
+
+ cleber morato 20 2
+ cleber morato 3 0
+ cleber mota 58 0
+ cleber mota 36 1
+ cleber nunes 51 2
+ cleber palazzo 49 1
+ cleber palazzo 2 2
+ cleber ramos 41 2
+ daniel campos 21 2
+ daniel lopes 26 0
+ daniel mota 44 1
+ daniel mota 0 2
+ daniel palazzo 35 1
+ daniel palazzo 3 2
+ daniel ramos 23 1
+ daniel salgado 70 0
+ daniel silva 38 2
+ danilo gonzaga 59 1
+ danilo morato 78 0
+ danilo nunes 46 2
+ danilo salgado 46 1
+ danilo silva 22 0
+ fernanda morato 49 0
+ fernanda mota 39 2
+ fernanda mota 32 0
+ fernanda mota 28 2
+ fernanda mota 6 0
+ fernanda nunes 3 2
+ fernanda ramos 79 2
+ fernanda ramos 49 2
+ fernanda salgado 8 1
+ fernanda zacarias 34 2
+ gabriel lopes 79 1
+ gabriel nunes 76 2
+ gabriel nunes 10 0
+ gabriel palazzo 12 0
+ gabriel palazzo 12 2
+ gabriel salgado 61 2
+ gabriel salgado 16 2
+ gabriel silva 67 0
+ gabriel zacarias 0 0
+ joao gonzaga 36 1
+ joao gonzaga 21 2
+ joao lopes 64 1
+ joao nunes 46 0
+ joao palazzo 3 1
+ joao ramos 44 0
+ joao zacarias 34 0
+ joao zacarias 25 1
+ luzia lopes 60 2
+ luzia morato 76 2
+ luzia palazzo 77 1
+ luzia palazzo 76 1
+ luzia palazzo 45 1
+ luzia ramos 75 2
+ luzia ramos 17 1
+ luzia zacarias 27 1
+ maria campos 72 2
+ maria gonzaga 69 1
+ maria gonzaga 59 2
+ maria lopes 42 1
+ maria morato 54 2
+ maria morato 21 0
+ maria nunes 60 1
+ maria nunes 59 0
+ maria nunes 8 0
+ maria ramos 71 0
+ maria ramos 8 1
+ maria ramos 4 2
+ maria silva 54 0
+ mauro gonzaga 23 0
+ mauro gonzaga 0 1
+ mauro gonzaga 0 2
+ mauro lopes 70 0
+ mauro lopes 39 1
+ mauro morato 10 2
+ mauro morato 6 2
+ mauro morato 0 1
+ mauro mota 24 2
+ mauro palazzo 79 1
+ mauro palazzo 44 0
+ mauro salgado 58 0
+ mauro salgado 21 2
+ mauro salgado 14 2
+ mauro silva 17 0
+ reinaldo lopes 55 1
+ reinaldo lopes 49 1
+ reinaldo lopes 18 2
+ reinaldo morato 70 2
+ reinaldo morato 61 0
+ reinaldo mota 49 1
+ reinaldo palazzo 70 1
+ reinaldo zacarias 63 2
+ ricardo lopes 14 1
+ ricardo morato 59 1
+ ricardo mota 46 0
+ ricardo nunes 11 1
+ ricardo palazzo 1 0
+ ricardo zacarias 70 2
+ ricardo zacarias 38 2
 
 =head2 AUTHOR
 
