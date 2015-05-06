@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+    <head>
+        <script src="./lib/sorter.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
+    </head>
+    <body>
+        <script>
+        var do_sort = function (some_data) {
+            var s = new Sorter({});
+            var result = s.load( some_data ).sort([[ 'firstname', 'asc'],['lastname','asc'],['age','desc'],['children','asc']]).data;
+            $( '.result' ).html( result );
+            var list = "";
+            for (var i = 0, item; item = result[i++];) {
+                //console.log(item.firstname, item.lastname, item.age, item.children )
+                list += [item.firstname, item.lastname, item.age, item.children].join(' ') + "\n"
+            }
+            $('.result-list').html(list)
+        }
+
+        $.ajax({
+            url : './data.json',
+            success: function ( some_data ) {
+                do_sort( some_data );
+            }
+        });
+
+        
+        </script>
+        <h1>JS-Sorter</h1>
+        <h3>Javascript lib to sort an array of objects, by column just like an SQL query does. </h3>
+        <h4>ie. by first_name asc, last_name desc, age asc</h4>
+        Example:
+        <pre>
+            var s = new Sorter({});
+
+            var sort_options = [
+                ['firstname'    , 'asc'],
+                ['lastname'     , 'asc'],
+                ['age'          , 'desc'],
+                ['children'     , 'asc']
+            ]
+
+            var result = s.load( some_data ).sort( sort_options ).data;
+            $( '.result' ).html( result );
+            var list = "";
+            for (var i = 0, item; item = result[i++];) {
+                //console.log(item.firstname, item.lastname, item.age, item.children )
+                list += [item.firstname, item.lastname, item.age, item.children].join(' ') + "\n"
+            }
+            $('.result-list').html(list)
+        </pre>
+        
+        <div class='result'></div>
+        <pre class='result-list'></pre>
+    </body>
+
+</html>
