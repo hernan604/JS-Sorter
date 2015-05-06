@@ -7,12 +7,14 @@
     <body>
         <script>
         var do_sort = function (some_data) {
+            console.log('do_sort')
             var s = new Sorter({});
             var result = s.load( some_data ).sort([[ 'firstname', 'asc'],['lastname','asc'],['age','desc'],['children','asc']]).data;
+            console.log(result)
             $( '.result' ).html( result );
             var list = "";
             for (var i = 0, item; item = result[i++];) {
-                //console.log(item.firstname, item.lastname, item.age, item.children )
+                console.log(item.firstname, item.lastname, item.age, item.children )
                 list += [item.firstname, item.lastname, item.age, item.children].join(' ') + "\n"
             }
             $('.result-list').html(list)
